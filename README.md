@@ -18,6 +18,7 @@ that occurred during a Read or Write respectively. This enables chaining
 multiple read or writes and checking errors only once.
 
 ## TODO:
-	- Implement Seek for readers
+
+  - Implement Seek for readers
   - Wrapper with notification once all readers are done with a file
   - Enable use of generic io.Reader/Writer as backend storage instead of jus files.
