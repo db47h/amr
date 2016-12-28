@@ -137,7 +137,7 @@ func (w *Writer) Cancel(err error) {
 	w.c.Broadcast()
 }
 
-// NewReader returns an io.ReadCloser that reads from the same file name that
+// NewReader returns a ReadCloser that reads from the same file name that
 // was used in the call to Create. In some cases it may be advisable to call
 // path.Abs() on the file name before calling Create and NewReader.
 //
