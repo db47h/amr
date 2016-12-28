@@ -30,11 +30,11 @@ type reader struct {
 	err error // last error
 }
 
-// ReadCloser wraps an io.ReadCloser with the Err method that returns the first error that occured in Read().
+// ReadCloser wraps an io.ReadCloser with the Err method that returns the first error that occurred in Read().
 type ReadCloser interface {
 	io.ReadCloser
 
-	// Err returns the first error that occured in Read(). This function is not thread-safe.
+	// Err returns the first error that occurred in Read(). This function is not thread-safe.
 	Err() error
 }
 
